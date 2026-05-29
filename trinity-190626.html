@@ -118,5 +118,14 @@ src="https://www.facebook.com/tr?id=1555530279915759&ev=PageView&noscript=1"
   <div class="foot-meta">© 2026 · The Paul Dunton Orchestra</div>
 </footer>
 
+<!-- Meta Pixel: fire AddToCart on any ticket/buy button click (delegated) -->
+<script>
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.buy-btn') && window.fbq) {
+      fbq('track', 'AddToCart');
+    }
+  });
+</script>
+
 </body>
 </html>
