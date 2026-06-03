@@ -34,7 +34,7 @@
     border-bottom:1px solid var(--rule)}
   .topbar .brand{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.02em;
     font-size:20px;color:var(--ink);display:inline-flex;gap:.4em;align-items:baseline;text-align:center}
-  .topbar .brand .red{color:var(--red)}
+  .topbar .brand .red{color:#f0852a}
 
   /* ── Poster stage ─────────────────────────────────── */
   .stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -50,7 +50,7 @@
     overflow:hidden;
   }
   /* corner flag accent */
-  .poster::before{content:"";position:absolute;top:0;left:0;width:90px;height:8px;background:var(--ink);z-index:4}
+  .poster::before{content:"";position:absolute;top:0;left:0;width:90px;height:8px;background:#f0852a;z-index:4}
 
   /* "Buy Tickets" button, centered below the poster */
   .buy-btn{
@@ -58,14 +58,14 @@
     padding:20px 56px;border:0;cursor:pointer;
     font-family:var(--font-body);text-transform:uppercase;letter-spacing:.22em;
     font-weight:700;font-size:clamp(15px,1.5vw,20px);color:#fff;
-    background:var(--ink);
-    box-shadow:0 12px 30px rgba(20,17,13,.28);
+    background:#f0852a;
+    box-shadow:0 12px 30px rgba(240,133,42,.4);
     transition:transform .25s cubic-bezier(.2,.7,.2,1), background .25s ease, box-shadow .25s ease;
   }
   .buy-btn:hover{
     transform:translateY(-2px);
-    background:var(--red);color:#fff;
-    box-shadow:0 16px 36px rgba(232,35,43,.4);
+    background:#d96d16;color:#fff;
+    box-shadow:0 16px 36px rgba(240,133,42,.5);
   }
   .buy-btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 
